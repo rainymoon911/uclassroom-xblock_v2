@@ -12,7 +12,7 @@ from config import Config
 from lib_docker_raw import DockerRawHelper
 from lib_git import GitLabUtil
 from lib_model import Lab, Docker
-from lib_util import Util,loader
+from lib_util import Util
 
 
 class UcDockerXBlock(XBlock):
