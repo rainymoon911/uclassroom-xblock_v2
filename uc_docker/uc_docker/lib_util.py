@@ -8,9 +8,7 @@ import pkg_resources
 
 from Crypto.Random import atfork
 from django.template import Context, Template
-from xblockutils.resources import ResourceLoader
 
-loader = ResourceLoader(__name__)
 
 class Util(object):
 
