@@ -4,7 +4,7 @@ import datetime
 import json
 import subprocess
 
-from os import mkdir
+from os import mkdirs
 from lib_git import GitLabUtil
 from lib_util import Util
 
@@ -112,7 +112,7 @@ class DockerRawHelper(object):
     def _create_tmp_dockerfile(self, docker_file_text):
         tmp_path = "/tmp/uc_docker/" + Util.random_string(12)
         tmp_file = tmp_path + "/Dockerfile"
-        mkdir(tmp_path)
+        mkdirs(tmp_path)
         f=open(tmp_file, 'w')
         f.write(docker_file_text)
         f.flush()
