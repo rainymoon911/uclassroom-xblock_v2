@@ -17,5 +17,4 @@ RUN	mkdir /root/.ssh;\
     mkdir /root/.vnc
 
 CMD ["/usr/sbin/sshd", "-D"]
-
 ENTRYPOINT ["/usr/bin/bash"]
